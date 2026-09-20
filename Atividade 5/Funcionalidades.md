@@ -1,14 +1,14 @@
 <ul>
-Adicionar novas tarefas.
-Definir a prioridade da tarefa: Urgente, Prioritário ou Normal.
-Pesquisar tarefas pelo nome.
-Organizar tarefas por prioridade, mais recentes ou mais antigas.
-Editar tarefas já adicionadas.
-Excluir tarefas individualmente.
-Limpar todas as tarefas de uma vez.
-Contador mostrando a quantidade de tarefas.
-Salvamento temporário das tarefas durante a sessão do navegador. (Utilizando sessionStorage)
-Interface desenvolvida com HTML, CSS e JavaScript.
+<li>Adicionar novas tarefas.
+<li>Definir a prioridade da tarefa: Urgente, Prioritário ou Normal.
+<li>Pesquisar tarefas pelo nome.
+<li>Organizar tarefas por prioridade, mais recentes ou mais antigas.
+<li>Editar tarefas já adicionadas.
+<li>Excluir tarefas individualmente.
+<li>Limpar todas as tarefas de uma vez.
+<li>Contador mostrando a quantidade de tarefas.
+<li>Salvamento temporário das tarefas durante a sessão do navegador. (Utilizando <li>sessionStorage)
+<li>Interface desenvolvida com HTML, CSS e JavaScript.
 </ul>
 
 
