@@ -1,4 +1,3 @@
-<ul>
 <li>Adicionar novas tarefas.
 <li>Definir a prioridade da tarefa: Urgente, Prioritário ou Normal.
 <li>Pesquisar tarefas pelo nome.
@@ -9,7 +8,6 @@
 <li>Contador mostrando a quantidade de tarefas.
 <li>Salvamento temporário das tarefas durante a sessão do navegador. (Utilizando <li>sessionStorage)
 <li>Interface desenvolvida com HTML, CSS e JavaScript.
-</ul>
 
 
 Utilizei como base um antigo projeto meu:
