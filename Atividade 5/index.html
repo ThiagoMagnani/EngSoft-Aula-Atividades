@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Lista de tarefas</h1>
+
+        <div class="counter">
+          <span id="taskCount">0</span>
+          <small>tarefas</small>
+        </div>
+      </header>
+
+      <section class="add-area">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Digite uma nova tarefa..."
+          maxlength="120"
+        />
+
+        <select id="priorityInput">
+          <option value="Urgente">Urgente</option>
+          <option value="Prioritário">Prioritário</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <button id="addButton">+ Adicionar</button>
+      </section>
+
+      <p id="message" class="message"></p>
+
+      <section class="task-section">
+        <div class="section-title">
+          <div class="filters">
+            <select id="filter">
+              <option value="prioridade">Por prioridade</option>
+              <option value="recentes">Mais recentes</option>
+              <option value="antigas">Mais antigas</option>
+            </select>
+
+            <input type="text" id="searchInput" placeholder="Pesquisar..." />
+
+            <button id="clearButton" class="clear-button">Limpar tudo</button>
+          </div>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div id="emptyState" class="empty-state">
+          <div class="empty-icon">✓</div>
+          <h3>Nenhuma tarefa por aqui</h3>
+          <p>Adicione uma tarefa para começar.</p>
+        </div>
+      </section>
+
+      <footer>
+        <span>Lista de tarefas</span>
+        <span>Feito com HTML, CSS e JavaScript</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
