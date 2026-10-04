@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de Pessoas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contador">
+      <button class="reset" onclick="resetar()">↻</button>
+
+      <h1>Total</h1>
+      <input id="total" type="text" value="0" readonly />
+
+      <div class="pessoas">
+        <div class="pessoa">
+          <div class="icone homem">👨🏻‍💼</div>
+
+          <div class="botoes">
+            <button class="mais" onclick="adicionarHomem()">+</button>
+            <button class="menos" onclick="removerHomem()">−</button>
+          </div>
+
+          <h2>Homens</h2>
+          <input id="homens" type="text" value="0" readonly />
+        </div>
+
+        <div class="pessoa">
+          <div class="icone mulher">👩🏻‍💼</div>
+
+          <div class="botoes">
+            <button class="mais" onclick="adicionarMulher()">+</button>
+            <button class="menos" onclick="removerMulher()">−</button>
+          </div>
+
+          <h2>Mulheres</h2>
+          <input id="mulheres" type="text" value="0" readonly />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

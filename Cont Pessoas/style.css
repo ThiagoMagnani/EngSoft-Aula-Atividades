@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.contador {
+  width: 590px;
+  max-width: 94%;
+  padding: 35px 30px 40px;
+  background: white;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 3px 10px #aaa;
+}
+
+.reset {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border: none;
+  background: none;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0 0 15px;
+  font-size: 52px;
+  font-weight: normal;
+}
+
+input {
+  width: 195px;
+  height: 70px;
+  border: 3px solid #888;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 32px;
+}
+
+#total {
+  margin-bottom: 45px;
+}
+
+.pessoas {
+  display: flex;
+  gap: 30px;
+}
+
+.pessoa {
+  width: 50%;
+}
+
+.icone {
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 125px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px 0 20px;
+}
+
+.botoes button {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.mais {
+  background: #65a844;
+}
+
+.menos {
+  background: #e94b3c;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.pessoa input {
+  width: 180px;
+  height: 65px;
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+
+  .contador {
+    padding: 25px 15px 30px;
+  }
+
+  .reset {
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  #total {
+    width: 160px;
+    height: 60px;
+    margin-bottom: 35px;
+  }
+
+  .pessoas {
+    gap: 10px;
+  }
+
+  .icone {
+    height: 120px;
+    font-size: 85px;
+  }
+
+  .botoes {
+    gap: 10px;
+  }
+
+  .botoes button {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .pessoa input {
+    width: 130px;
+    height: 55px;
+    font-size: 27px;
+  }
+}
