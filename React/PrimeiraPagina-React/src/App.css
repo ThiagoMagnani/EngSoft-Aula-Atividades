@@ -1,0 +1,66 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  background-color: #292929;
+  font-family: Arial, sans-serif;
+}
+
+.cartao {
+  width: 100%;
+  max-width: 730px;
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.imagem-faculdade {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.conteudo {
+  padding: 0 10px;
+}
+
+.conteudo h1 {
+  color: #3267db;
+  font-size: 28px;
+  margin: 14px 0;
+}
+
+.conteudo h2 {
+  color: #222222;
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.conteudo p {
+  color: #444444;
+  font-size: 18px;
+  margin: 20px 0 8px;
+}
+
+@media (max-width: 600px) {
+  .imagem-faculdade {
+    height: 250px;
+  }
+
+  .conteudo h1 {
+    font-size: 24px;
+  }
+
+  .conteudo h2 {
+    font-size: 18px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+  }
+}
