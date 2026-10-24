@@ -1,63 +1,88 @@
-.pagina {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 15px;
-  background-color: #292929;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
+}
+
+.pagina {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #292929;
+  padding: 15px;
 }
 
 .cartao {
   width: 100%;
-  max-width: 730px;
-  background-color: #ffffff;
-  padding: 10px;
+  min-height: calc(100vh - 30px);
+  background-color: white;
+  padding: 8px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .imagem-faculdade {
   display: block;
   width: 100%;
-  height: 400px;
+  height: 65vh;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .conteudo {
-  padding: 0 10px;
+  padding: 20px;
 }
 
 .conteudo h1 {
   color: #3267db;
-  font-size: 28px;
-  margin: 14px 0;
+  font-size: 32px;
+  margin: 10px 0 15px;
 }
 
 .conteudo h2 {
-  color: #222222;
-  font-size: 20px;
-  margin: 16px 0;
+  color: #222;
+  font-size: 24px;
+  margin: 15px 0;
 }
 
 .conteudo p {
-  color: #444444;
+  color: #444;
   font-size: 18px;
-  margin: 20px 0 8px;
+  margin: 20px 0;
 }
 
 @media (max-width: 600px) {
+  .pagina {
+    padding: 10px;
+  }
+
+  .cartao {
+    min-height: calc(100vh - 20px);
+    padding: 6px;
+  }
+
   .imagem-faculdade {
-    height: 250px;
+    height: 45vh;
+  }
+
+  .conteudo {
+    padding: 15px 8px;
   }
 
   .conteudo h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .conteudo h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .conteudo p {
