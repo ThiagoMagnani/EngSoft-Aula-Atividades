@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #dddddd;
+  font-family: Arial, sans-serif;
+}
+
+.contador {
+  position: relative;
+  width: min(100%, 430px);
+  height: min(94vh, 850px);
+  min-height: 500px;
+  padding: 24px 20px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contador h1 {
+  margin: 12px 0 16px;
+  font-size: clamp(36px, 6vh, 48px);
+  font-weight: normal;
+}
+
+.reiniciar {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  border: none;
+  background: none;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.visor {
+  width: 70%;
+  max-width: 215px;
+  padding: 10px;
+  border: 2px solid #929292;
+  border-radius: 8px;
+  background: white;
+  font-size: 28px;
+  text-align: center;
+}
+
+.visor.total {
+  margin: 0 auto;
+}
+
+.grupos {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  min-height: 0;
+}
+
+.grupo {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pessoa {
+  height: clamp(75px, 17vh, 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(60px, 12vh, 95px);
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 18px);
+  margin: clamp(12px, 3vh, 24px) 0;
+}
+
+.acoes button {
+  width: clamp(48px, 10vh, 66px);
+  height: clamp(48px, 10vh, 66px);
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.adicionar {
+  background-color: #64aa43;
+}
+
+.remover {
+  background-color: #f04438;
+}
+
+.acoes button:hover {
+  filter: brightness(0.9);
+}
+
+.grupo h2 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 4vh, 28px);
+  font-weight: normal;
+}
+
+.grupo .visor {
+  width: 100%;
+  padding: 10px 4px;
+  font-size: clamp(24px, 4vh, 30px);
+}
+
+@media (max-height: 600px) {
+  .contador {
+    min-height: 0;
+    height: 96vh;
+    padding: 10px 16px;
+  }
+
+  .contador h1 {
+    margin: 4px 0 8px;
+    font-size: 30px;
+  }
+
+  .grupos {
+    margin-top: 10px;
+  }
+
+  .pessoa {
+    height: 65px;
+    font-size: 55px;
+  }
+
+  .acoes {
+    margin: 8px 0;
+  }
+}
