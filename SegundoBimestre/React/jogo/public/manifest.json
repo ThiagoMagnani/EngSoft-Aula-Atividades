@@ -1,0 +1,8 @@
+{
+  "short_name": "Última Dose",
+  "name": "Última Dose — Bar do Fim do Mundo",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#100f16",
+  "background_color": "#100f16"
+}
